@@ -20,7 +20,7 @@ jobs:
              run: sudo apt install cmake
              run: sudo apt install clang
              run: cd hello_world_application && cmake . -B _build -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang && cd _build && make
-             run: cd solver_application && cmake . -B _build -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang && cd _build && makename: lab4
+             run: cd solver_application && cmake . -B _build -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang && cd _build && make
 on: push
 jobs:
   gcc:

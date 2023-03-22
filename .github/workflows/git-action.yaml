@@ -6,7 +6,7 @@ jobs:
     steps:
           - name: get the repository code
             uses: actions/checkout@v3
-          - name: first
+            run: sudo apt update -y
             run: sudo apt install cmake
             run: cd hello_world_application && cmake. -B _build && cd _build && make
             run: cd solver_application && cmake. -B _build && cd _build && make
@@ -16,7 +16,7 @@ jobs:
      steps:
            - name: get the repository code
              uses: actions/checkout@v3
-           - name: second
+             run: sudo apt update -y
              run: sudo apt install cmake
              run: sudo apt install clang
              run: cd hello_world_application && cmake . -B _build -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_C_COMPILER=clang && cd _build && make
